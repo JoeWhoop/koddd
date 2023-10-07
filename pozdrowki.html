@@ -1,18 +1,35 @@
+<!DOCTYPE html>
 <html>
 <head>
-Testing pages
+    <title>Choose an Option</title>
+</head>
 <body>
-<h1> 
-wybierz swoja opcje
-</h1>
-<form>
-	<select name="kto pracuje">
-		<option value ="Lukasz">Lukasz</option>
-		<option value ="Krzysztof">Lukasz</option>
-		<option value ="Piotr">Lukasz</option>
-		<option value ="Miszor">Lukasz</option>
-	</select>
-</form>
+    <h1>Choose an Option:</h1>
+    <select id="optionDropdown">
+        <option value="piotr">Piotr</option>
+        <option value="krzysztof">Krzysztof</option>
+        <option value="dzik">Dzik</option>
+        <option value="joe">Joe</option>
+    </select>
+    <button id="goButton">Go</button>
+
+    <script>
+        // JavaScript to handle button click and redirection
+        document.getElementById("goButton").addEventListener("click", function () {
+            var selectedOption = document.getElementById("optionDropdown").value;
+
+            if (selectedOption === "piotr") {
+                window.location.href = "https://example.com/piotr"; // Replace with the desired URL for Piotr
+            } else if (selectedOption === "krzysztof") {
+                window.location.href = "https://facebook.com"; // Redirect to Facebook for Krzysztof
+            } else if (selectedOption === "dzik") {
+                window.location.href = "https://google.com"; // Redirect to Google for Dzik
+            } else if (selectedOption === "joe") {
+                window.location.href = "https://youtube.com"; // Redirect to YouTube for Joe
+            } else {
+                alert("Please select an option before clicking Go.");
+            }
+        });
+    </script>
 </body>
-</head> 
-</html> 
+</html>
