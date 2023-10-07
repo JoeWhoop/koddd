@@ -1,0 +1,29 @@
+/* Style for the page header */
+h1 {
+    font-size: 24px;
+    text-align: center;
+}
+
+/* Style for the dropdown menu */
+#optionDropdown {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+}
+
+/* Style for the Go button */
+#goButton {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    background-color: #007bff; /* Blue color, you can change this */
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+}
+
+/* Style for the selected option in the dropdown */
+#optionDropdown option:checked {
+    font-weight: bold;
+}
